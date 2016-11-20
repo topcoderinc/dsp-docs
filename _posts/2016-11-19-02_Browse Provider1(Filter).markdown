@@ -2,7 +2,7 @@
 layout: post
 title:  "02_Browse_Provider1(Filter)"
 date:   2016-11-19
-categories: jekyll update
+categories: post
 ---
 
 <img src="/images/posts/2016-11-19/02_Browse_Provider1(Filter)">

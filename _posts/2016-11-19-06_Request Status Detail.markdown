@@ -2,7 +2,7 @@
 layout: post
 title:  "06_Request_Status_Detail"
 date:   2016-11-19
-categories: jekyll update
+categories: post
 ---
 
 <img src="/images/posts/2016-11-19/06_Request_Status_Detail.jpg">
