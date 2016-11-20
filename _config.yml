@@ -29,3 +29,10 @@ gems:
 exclude:
   - Gemfile
   - Gemfile.lock
+
+
+# Custom headers
+webrick:
+  headers:
+    Content-Security-Policy: default-src 'none'; script-src 'self'; connect-src 'self'; img-src 'self'; style-src 'self';
+    My-Other-Header: My-Other-Value
