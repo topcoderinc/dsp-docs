@@ -2,6 +2,7 @@
 layout: post
 title:  "00_Home"
 date:   2016-11-19
+categories: posts
 ---
 
 <img src="/images/posts/2016-11-19/00_Home.jpg">
