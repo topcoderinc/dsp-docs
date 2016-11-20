@@ -17,7 +17,7 @@ title: Drone Market ReactJS Deployment Plans
 email: d3dyw4hyud1@gmail.com
 description: > # This is Github.io webpages to describe all Drone Market ReactJS Deployment Plans Storyboard Screens
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://dedywahyudi.github.io/dronemarket.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: d3dyw4hyud1
 github_username:  dedywahyudi
 
@@ -29,10 +29,3 @@ gems:
 exclude:
   - Gemfile
   - Gemfile.lock
-
-
-# Custom headers
-webrick:
-  headers:
-    Content-Security-Policy: default-src 'none'; script-src 'self'; connect-src 'self'; img-src 'self'; style-src 'self';
-    My-Other-Header: My-Other-Value
