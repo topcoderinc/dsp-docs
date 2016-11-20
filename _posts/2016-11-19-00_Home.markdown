@@ -5,9 +5,7 @@ date:   2016-11-19 19:41:45 +0700 19:41:45 +0700
 categories: post
 ---
 
-```ruby source 'https://rubygems.org' require 'json' require 'open-uri' versions = JSON.parse(open('https://pages.github.com/versions.json').read) gem 'github-pages', versions['github-pages'] ```
-
-<img src="{{ site.github.url }}/images/posts/2016-11-19/00_Home.jpg">
+<img src="{{ site.url }}/images/posts/2016-11-19/00_Home.jpg">
 
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 
