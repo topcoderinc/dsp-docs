@@ -5,24 +5,44 @@ date:   2016-11-19 19:41:45 +0700 19:41:45 +0700
 categories: post
 ---
 
-<img src="{{ site.github.url }}/images/posts/2016-11-19/00_Home.jpg">
+```
+.
+├── bin                      # Build/Start scripts
+├── build                    # All build-related configuration
+│   └── webpack              # Environment-specific configuration files for webpack
+├── config                   # Project configuration settings
+├── server                   # Express application that provides webpack middleware
+│   └── main.js              # Server application entry point
+├── src                      # Application source code
+│   ├── index.html           # Main HTML page container for app
+│   ├── main.js              # Application bootstrap and rendering
+│   ├── components           # Global Reusable Presentational Components
+│   ├── containers           # Global Reusable Container Components
+│   ├── layouts              # Components that dictate major page structure
+│   │   └── CoreLayout.js    # CoreLayout which receives children for each route
+│   │   └── CoreLayout.scss  # Styles related to the CoreLayout
+│   │   └── index.js         # Main file for layout
+│   ├── routes               # Main route definitions and async split points
+│   │   ├── index.js         # Bootstrap main application routes with store
+│   │   ├── Home             # Fractal route
+│   │       ├── index.js     # Route definitions and async split points
+│   │       ├── assets       # Assets required to render components
+│   │       ├── components   # Presentational React Components
+│   │       └── routes **    # Fractal sub-routes (** optional)
+│   ├── static               # Static assets (not imported anywhere in source code)
+│   ├── store                # Redux-specific pieces
+│   │   ├── createStore.js   # Create and instrument redux store
+│   │   └── reducers.js      # Reducer registry and injection
+│   └── styles               # Application-wide styles (generally settings)
+└── tests                    # Unit tests
+```
 
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
-
-To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
-
-Jekyll also offers powerful support for code snippets:
-
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
-
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
-
-[jekyll-docs]: http://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
+### Features
+* [react](https://github.com/facebook/react)
+* [redux](https://github.com/rackt/redux)
+* [react-router](https://github.com/rackt/react-router)
+* [webpack](https://github.com/webpack/webpack)
+* [babel](https://github.com/babel/babel)
+* [express](https://github.com/expressjs/express)
+* [karma](https://github.com/karma-runner/karma)
+* [eslint](http://eslint.org)
