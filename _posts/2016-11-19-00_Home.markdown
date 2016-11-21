@@ -9,7 +9,7 @@ categories: post
 
 ### Component Structure
 
-{% highlight ruby %}
+{% highlight %}
 Components
 │   Test
 │   file001.txt    
