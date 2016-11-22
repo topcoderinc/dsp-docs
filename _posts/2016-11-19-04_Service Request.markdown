@@ -14,9 +14,11 @@ App
 │───Header
 └───Content
 │   └───Breadcrumb
-│   └───ServiceAddress
-│   │   └───UserLocation
-│   │   └───TargetLocation
+│   └───ServiceRequest
+│       └───ServiceAddress
+│       |   └───UserLocation
+│       |   └───TargetLocation
+│       │───ServiceDetail
 │   └───ProviderMap
 │       └───DroneRoutes
 │       └───DroneCurrentLocation
