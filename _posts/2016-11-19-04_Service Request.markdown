@@ -18,7 +18,7 @@ App
 │   │   └───ServiceAddress
 │   │   │   └───UserLocation
 │   │   │   └───TargetLocation
-│   │   │───ServiceDetail
+│   │   └───ServiceDetail
 │   └───ProviderMap
 │       └───DroneRoutes
 │       └───DroneCurrentLocation
