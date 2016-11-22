@@ -15,10 +15,10 @@ App
 └───Content
 │   └───Breadcrumb
 │   └───ServiceRequest
-│       └───ServiceAddress
-│       │   └───UserLocation
-│       │   └───TargetLocation
-│       │───ServiceDetail
+│   │   └───ServiceAddress
+│   │   │   └───UserLocation
+│   │   │   └───TargetLocation
+│   │   │───ServiceDetail
 │   └───ProviderMap
 │       └───DroneRoutes
 │       └───DroneCurrentLocation
