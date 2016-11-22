@@ -16,8 +16,8 @@ App
 │   └───Breadcrumb
 │   └───ServiceRequest
 │       └───ServiceAddress
-│       |   └───UserLocation
-│       |   └───TargetLocation
+│       │   └───UserLocation
+│       │   └───TargetLocation
 │       │───ServiceDetail
 │   └───ProviderMap
 │       └───DroneRoutes
