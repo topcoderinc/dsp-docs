@@ -1,19 +1,17 @@
 ---
 layout: post
-title:  "02_Browse_Provider0"
+title:  "02_Browse_Provider"
 date:   2016-11-19 19:41:45 +0700
 categories: post
 ---
 
-<img src="{{ site.github.url }}/images/posts/2016-11-19/02_Browse_Provider0.jpg">
+<img src="{{ site.github.url }}/images/posts/2016-11-19/02_Browse_Provider.jpg">
 
 ### Component Structure
 
 {% highlight js %}
 App
 │───Header
-│   └───Notification
-│   │   └───NotificationRow
 └───Content
 │   └───BrowseProvider
 │   │   └───BrowseProviderHeader

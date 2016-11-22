@@ -1,9 +1,12 @@
 ---
 layout: post
-title:  "Project Structure"
+title:  "00_A_Project_Structure"
 date:   2016-11-19 19:41:45 +0700 19:41:45 +0700
 categories: post
 ---
+
+Here's the the suggested Project Structure for Drone Market ReactJS Development.
+Feel free to come up with your own suggestions!
 
 ```
 .
@@ -37,7 +40,10 @@ categories: post
 └── tests                    # Unit tests
 ```
 
-### Features
+### Main Dependencies
+
+Again, here's main Dependencies suggestions. Feel free to come up with your own suggestions!
+
 * [react](https://github.com/facebook/react)
 * [redux](https://github.com/rackt/redux)
 * [react-router](https://github.com/rackt/react-router)
