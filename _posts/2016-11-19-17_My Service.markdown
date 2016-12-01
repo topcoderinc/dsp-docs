@@ -26,3 +26,16 @@ App
 ### Recommended Libraries
 
 * [MyServicesHeader](https://jsfiddle.net/carlosrocha/xgde4uh0/)
+
+### PropTypes
+
+{% highlight ruby %}
+
+-- MyServicesTable.jsx --
+MyServicesTable.propTypes = {
+  title: PropTypes.string.isRequired,
+  pricing: PropTypes.number.isRequired,
+  description: PropTypes.string.isRequired,
+};
+
+{% endhighlight %}

@@ -21,10 +21,7 @@ Feel free to come up with your own suggestions!
 │   ├── main.js              # Application bootstrap and rendering
 │   ├── components           # Global Reusable Presentational Components
 │   ├── containers           # Global Reusable Container Components
-│   ├── layouts              # Components that dictate major page structure
-│   │   └── CoreLayout.js    # CoreLayout which receives children for each route
-│   │   └── CoreLayout.scss  # Styles related to the CoreLayout
-│   │   └── index.js         # Main file for layout
+│   ├── layouts              # Components that dictate major page
 │   ├── routes               # Main route definitions and async split points
 │   │   ├── index.js         # Bootstrap main application routes with store
 │   │   ├── Home             # Fractal route
@@ -52,3 +49,7 @@ Again, here's main Dependencies suggestions. Feel free to come up with your own 
 * [express](https://github.com/expressjs/express)
 * [karma](https://github.com/karma-runner/karma)
 * [eslint](http://eslint.org)
+
+### CSS Styling
+
+Based on my experience, it better use component level styling. It more easy to maintain than global styling. But, for general layout might need create one core layout.

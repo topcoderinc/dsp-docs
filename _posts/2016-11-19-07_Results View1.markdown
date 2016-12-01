@@ -15,9 +15,17 @@ App
 └───Content
 └───Footer
 └───ModalOverlay
-    └───RatePilot
+    └───ModalRatePilot
 {% endhighlight %}
 
 ### Recommended Libraries
 
 * [Rating](https://github.com/cameronroe/react-star-rating)
+
+### PropTypes
+
+{% highlight ruby %}
+
+N/A
+
+{% endhighlight %}

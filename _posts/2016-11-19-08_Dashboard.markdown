@@ -15,7 +15,7 @@ App
 └───Content
 │   └───Breadcrumb
 │   └───DashboardStatus
-│   └───DashboardRequest
+│   └───DashboardRequestTab
 │   │   └───NewRequest
 │   │   │   └───NewRequestRow
 │   │   │   └───NewRequestPagination
@@ -29,4 +29,44 @@ App
 
 ### Recommended Libraries
 
-* [NewRequestTable](https://jsfiddle.net/carlosrocha/xgde4uh0/)
+* [Table](https://jsfiddle.net/carlosrocha/xgde4uh0/)
+
+### PropTypes
+
+{% highlight ruby %}
+
+-- DashboardStatus.jsx --
+DashboardStatus.propTypes = {
+  newrequest: PropTypes.number.isRequired,
+  sheduledmissions: PropTypes.number.isRequired,
+  missioninprogress: PropTypes.number.isRequired,
+  completedmissions: PropTypes.number.isRequired,
+  totaldrones: PropTypes.number.isRequired,
+};
+
+-- NewRequest.jsx --
+NewRequest.propTypes = {
+  id: PropTypes.string.isRequired,
+  date: PropTypes.string.isRequired,
+  location: PropTypes.date.isRequired,
+  status: PropTypes.string.isRequired,
+};
+
+-- LatestNotification.jsx --
+LatestNotification.propTypes = {
+  icon: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  time: PropTypes.string.isRequired,
+};
+
+-- RecentExecutedRequest.jsx --
+RecentExecutedRequest.propTypes = {
+  icon: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  requestnumber: PropTypes.number.isRequired,
+  time: PropTypes.string.isRequired,
+};
+
+{% endhighlight %}

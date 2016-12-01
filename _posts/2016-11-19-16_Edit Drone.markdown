@@ -14,8 +14,8 @@ App
 │───Header
 └───Content
 │   └───Breadcrumb
-│   └───EditDrones
-│       └───EditDronesFrom
+│   └───EditDronesHeader
+│   └───EditDronesFrom
 └───Footer
 {% endhighlight %}
 
@@ -24,3 +24,11 @@ App
 * [Dropdown](https://github.com/JedWatson/react-select)
 * [Datepicker](https://github.com/Hacker0x01/react-datepicker)
 * [RadioButton & Checkboxes](http://www.luqin.xyz/react-icheck/#/?_k=ncq8ed)
+
+### PropTypes
+
+{% highlight ruby %}
+
+N/A
+
+{% endhighlight %}

@@ -31,4 +31,54 @@ App
 
 ### Recommended Libraries
 
-* [ProviderMap](https://github.com/istarkov/google-map-react)
+* [Map](https://github.com/istarkov/google-map-react)
+
+### PropTypes
+
+{% highlight ruby %}
+
+-- MissionProgressDetail.jsx --
+MissionProgressDetail.propTypes = {
+  type: PropTypes.string.isRequired,
+  delivereditem: PropTypes.string.isRequired,
+  weight: PropTypes.number.isRequired,
+  deliverytime: PropTypes.date.isRequired,
+  pickuplocation: PropTypes.string.isRequired,
+  dropofflocation: PropTypes.string.isRequired,
+  distance: PropTypes.number.isRequired,
+  payout: PropTypes.number.isRequired,
+};
+
+-- MissionProgressContact.jsx --
+MissionProgressContact.propTypes = {
+  name: PropTypes.string.isRequired,
+  address: PropTypes.string.isRequired,
+  phone: PropTypes.number.isRequired,
+  email: PropTypes.string.isRequired,
+};
+
+-- MissionProgressDroneDetails.jsx --
+MissionProgressDroneDetails.propTypes = {
+  serial: PropTypes.serial.isRequired,
+  name: PropTypes.string.isRequired,
+  type: PropTypes.string.isRequired,
+  launch: PropTypes.date.isRequired,
+  estimatedarrival: PropTypes.date.isRequired,
+  speed: PropTypes.number.isRequired,
+};
+
+-- MissionProgressDroneEstimation.jsx --
+MissionProgressDroneEstimation.propTypes = {
+  timeoflaunch: PropTypes.string.isRequired,
+  speed: PropTypes.number.isRequired,
+  distance: PropTypes.number.isRequired,
+  time: PropTypes.string.isRequired,
+};
+
+-- RequestMap.jsx --
+RequestMap.propTypes = {
+  routes: PropTypes.string.isRequired,
+  eta: PropTypes.string.isRequired,
+};
+
+{% endhighlight %}

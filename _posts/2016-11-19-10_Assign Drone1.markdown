@@ -15,7 +15,7 @@ App
 └───Content
 │   └───Breadcrumb
 │   └───AssignDrone
-│       └───AssignDrone
+│       └───AssignDroneTitle
 │       └───AssignDroneInfo
 │       └───AssignDroneWizard
 │           └───Step1
@@ -30,3 +30,19 @@ App
 * [Dropdown](https://github.com/JedWatson/react-select)
 * [RadioButton & Checkboxes](http://www.luqin.xyz/react-icheck/#/?_k=ncq8ed)
 * [Datepicker](https://github.com/Hacker0x01/react-datepicker)
+
+### PropTypes
+
+{% highlight ruby %}
+
+-- AssignDroneInfo.jsx --
+AssignDroneInfo.propTypes = {
+  type: PropTypes.string.isRequired,
+  deliverydate: PropTypes.string.isRequired,
+  pickuplocation: PropTypes.string.isRequired,
+  dropoffdeliverylocation: PropTypes.string.isRequired,
+  whattodeliver: PropTypes.string.isRequired,
+  weight: PropTypes.number.isRequired,
+};
+
+{% endhighlight %}

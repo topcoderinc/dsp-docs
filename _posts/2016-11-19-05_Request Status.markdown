@@ -23,3 +23,17 @@ App
 ### Recommended Libraries
 
 * N/A
+
+### PropTypes
+
+{% highlight ruby %}
+
+-- MyRequestStatus.jsx --
+MyRequestStatus.propTypes = {
+  name: PropTypes.string.isRequired,
+  provider: PropTypes.string.isRequired,
+  timeoflaunch: PropTypes.date.isRequired,
+  status: PropTypes.string.isRequired,
+};
+
+{% endhighlight %}

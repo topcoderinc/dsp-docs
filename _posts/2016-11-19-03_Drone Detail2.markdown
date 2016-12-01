@@ -21,3 +21,15 @@ App
 ### Recommended Libraries
 
 * N/A
+
+### PropTypes
+
+{% highlight ruby %}
+
+-- ModalPackageDetail.jsx --
+ModalPackageDetail.propTypes = {
+  gallery: PropTypes.array.isRequired,
+  description: PropTypes.string.isRequired,
+};
+
+{% endhighlight %}

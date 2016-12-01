@@ -29,3 +29,51 @@ App
 ### Recommended Libraries
 
 * N/A
+
+### PropTypes
+
+{% highlight ruby %}
+
+-- DroneDetailBanner.jsx --
+DroneDetailBanner.propTypes = {
+  photo: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  badge: PropTypes.bool.isRequired,
+  rating: PropTypes.number.isRequired,
+  availabledrones: PropTypes.number.isRequired,
+  totaldrones: PropTypes.number.isRequired,
+  insurance: PropTypes.number.isRequired,
+  hourlyrate: PropTypes.number.isRequired,
+  completedjob: PropTypes.number.isRequired,
+};
+
+-- DroneAbout.jsx --
+DroneAbout.propTypes = {
+  photo: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+};
+
+-- DroneSpecification.jsx --
+DroneSpecification.propTypes = {
+  dronephotos: PropTypes.array.isRequired,
+  dronespecification: PropTypes.array.isRequired,
+  dronesbenefits: PropTypes.array.isRequired,
+};
+
+-- ServicesItem.jsx --
+ServicesItem.propTypes = {
+  photo: PropTypes.string.isRequired,
+  icon: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+};
+
+-- FeedbackItem.jsx --
+FeedbackItem.propTypes = {
+  photo: PropTypes.string.isRequired,
+  time: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  rating: PropTypes.number.isRequired,
+};
+
+{% endhighlight %}

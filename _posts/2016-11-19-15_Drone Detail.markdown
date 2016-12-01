@@ -28,4 +28,33 @@ App
 
 ### Recommended Libraries
 
-* [ProviderMap](https://github.com/istarkov/google-map-react)
+* [Map](https://github.com/istarkov/google-map-react)
+
+### PropTypes
+
+{% highlight ruby %}
+
+-- DroneInfoDetails.jsx --
+DroneInfoDetails.propTypes = {
+  photo: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+};
+
+-- DroneInfoSpecification.jsx --
+DroneInfoSpecification.propTypes = {
+  dronephotos: PropTypes.array.isRequired,
+  dronespecification: PropTypes.array.isRequired,
+  dronesbenefits: PropTypes.array.isRequired,
+};
+
+-- LastCompletedMissions.jsx --
+LastCompletedMissions.propTypes = {
+  route: PropTypes.string.isRequired,
+  id: PropTypes.string.isRequired,
+  type: PropTypes.string.isRequired,
+  date: PropTypes.string.isRequired,
+  location: PropTypes.string.isRequired,
+};
+
+{% endhighlight %}

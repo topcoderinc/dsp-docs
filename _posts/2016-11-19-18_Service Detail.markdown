@@ -14,14 +14,38 @@ App
 │───Header
 └───Content
 │   └───Breadcrumb
+│   │   └───ServiceDetailHeader
 │   └───ServiceDetail
-│   |   └───ServiceDetailHeader
-│   |   └───ServiceDetailInfo
-│   └───AvailablePackages
-│       └───AvailablePackages
+│   │   └───ServiceDetailInfo
+│   │   └───AvailablePackages
+│   │        └───AvailablePackages
 └───Footer
 {% endhighlight %}
 
 ### Recommended Libraries
 
 * N/A
+
+### PropTypes
+
+{% highlight ruby %}
+
+-- DroneDetailBanner.jsx --
+DroneDetailBanner.propTypes = {
+  photo: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+};
+
+-- AvailablePackagesItem.jsx --
+AvailablePackagesItem.propTypes = {
+  title: PropTypes.string.isRequired,
+  icon: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  features: PropTypes.array.isRequired,
+  pax: PropTypes.number.isRequired,
+  regularprice: PropTypes.number.isRequired,
+  samplelink: PropTypes.string.isRequired,
+};
+
+{% endhighlight %}

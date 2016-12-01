@@ -14,18 +14,42 @@ App
 │───Header
 └───Content
 │   └───Breadcrumb
-│   └───StatusDetailHeader
 │   └───StatusDetail
+│   │   └───StatusDetailHeader
 │   │   └───StatusDetailInfo
-│   │   └───StatusDetailMapRoute
-│   │   │   └───DroneRoutes
-│   │   │   └───DroneLocations
-│   │   └───StatusDetailFrontCamera
-│   │   └───StatusDetailBackCamera
+│   │   └───StatusDetailMap
+│   │   │   └───StatusDetailMapRoute
+│   │   │   │   └───DroneRoutes
+│   │   │   │   └───DroneLocationsLegends
+│   │   │   │   └───DroneLocationsETA
+│   │   │   └───StatusDetailFrontCamera
+│   │   │   └───StatusDetailBackCamera
 │   └───MissionGallery
 └───Footer
 {% endhighlight %}
 
 ### Recommended Libraries
 
-* [ProviderMap](https://github.com/istarkov/google-map-react)
+* [Map](https://github.com/istarkov/google-map-react)
+
+### PropTypes
+
+{% highlight ruby %}
+
+-- StatusDetailInfo.jsx --
+StatusDetailInfo.propTypes = {
+  timeoflaunch: PropTypes.date.isRequired,
+  timecompleted: PropTypes.date.isRequired,
+  speed: PropTypes.number.isRequired,
+  distance: PropTypes.number.isRequired,
+  name: PropTypes.string.isRequired,
+};
+
+-- StatusDetailMapRoute.jsx --
+StatusDetailMapRoute.propTypes = {
+  routes: PropTypes.string.isRequired,
+  dronelocation: PropTypes.string.isRequired,
+  eta: PropTypes.string.isRequired,
+};
+
+{% endhighlight %}

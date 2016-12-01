@@ -14,18 +14,61 @@ App
 │───Header
 └───Content
 │   └───Breadcrumb
-│   └───StatusDetailHeader
 │   └───StatusDetail
+│   │   └───StatusDetailHeader
 │   │   └───StatusDetailInfo
-│   │   └───StatusDetailMapRoute
-│   └───DeployMissionParameters
-│   └───DroneGraphPerformance
-│   └───MissionGallery
-│   │   └───MissionGalleryItem
-│   │   └───MissionGalleryPagination
+│   │   │   └───StatusProjectInfo
+│   │   │   └───StatusDetailMapRoute
+│   │   └───DeployMissionParameters
+│   │   │   └───OverallDronePerformance
+│   │   │   └───DroneGraphPerformance
+│   │   └───MissionGallery
+│   │   │   └───MissionGalleryItem
+│   │   │   └───MissionGalleryPagination
 └───Footer
 {% endhighlight %}
 
 ### Recommended Libraries
 
-* [ProviderMap](https://github.com/istarkov/google-map-react)
+* [Map](https://github.com/istarkov/google-map-react)
+* [Slideshow](https://github.com/xiaolin/react-image-gallery)
+
+### PropTypes
+
+{% highlight ruby %}
+
+-- StatusDetailInfo.jsx --
+StatusDetailInfo.propTypes = {
+  name: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  address: PropTypes.string.isRequired,
+  contactname: PropTypes.string.isRequired,
+  telephone: PropTypes.string.isRequired,
+};
+
+-- StatusDetailMapRoute.jsx --
+StatusDetailMapRoute.propTypes = {
+  routes: PropTypes.string.isRequired,
+  dronelocation: PropTypes.string.isRequired,
+};
+
+-- OverallDronePerformance.jsx --
+OverallDronePerformance.propTypes = {
+  speed: PropTypes.number.isRequired,
+  easeofuse: PropTypes.number.isRequired,
+  flightperformance: PropTypes.number.isRequired,
+  cameraperformance: PropTypes.number.isRequired,
+};
+
+-- DroneGraphPerformance.jsx --
+DroneGraphPerformance.propTypes = {
+  time: PropTypes.string.isRequired,
+  altitude: PropTypes.number.isRequired,
+};
+
+-- MissionGalleryItem.jsx --
+MissionGalleryItem.propTypes = {
+  photo: PropTypes.string.isRequired,
+};
+
+{% endhighlight %}

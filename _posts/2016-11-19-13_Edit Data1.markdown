@@ -27,3 +27,14 @@ App
 
 * [Dropdown](https://github.com/JedWatson/react-select)
 * [Datepicker](https://github.com/Hacker0x01/react-datepicker)
+
+### PropTypes
+
+{% highlight ruby %}
+
+-- UploadedPicture.jsx --
+UploadedPicture.propTypes = {
+  photo: PropTypes.string.isRequired,
+};
+
+{% endhighlight %}

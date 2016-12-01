@@ -28,3 +28,17 @@ App
 ### Recommended Libraries
 
 * N/A
+
+### PropTypes
+
+{% highlight ruby %}
+-- Header.jsx --
+Header.propTypes = {
+  location: PropTypes.string.isRequired,
+  selectedCategory: PropTypes.string.isRequired,
+  categories: PropTypes.array.isRequired,
+  notifications: PropTypes.array.isRequired,
+  user: PropTypes.object.isRequired,
+};
+
+{% endhighlight %}

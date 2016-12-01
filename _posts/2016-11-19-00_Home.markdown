@@ -16,7 +16,8 @@ App
 │   └───MainBanner
 │   └───PopularDrones
 │   │   └───PopularDroneHeader
-│   │   └───PopularDroneItem
+│   │   └───PopularDroneSlider
+│   │   │   └───PopularDroneSliderItem
 │   │   └───PopularDronePagination
 │   └───PromotedService
 │   │   └───PromotedServiceHeader
@@ -36,5 +37,52 @@ App
 
 ### Recommended Libraries
 
-* [PopularDrones](https://github.com/xiaolin/react-image-gallery)
-* [LastCompletedMissions](https://github.com/istarkov/google-map-react)
+* [Slideshow](https://github.com/xiaolin/react-image-gallery)
+* [Map](https://github.com/istarkov/google-map-react)
+
+### PropTypes
+
+{% highlight ruby %}
+-- PopularDroneSliderItem.jsx --
+PopularDrone.propTypes = {
+  items: PropTypes.array.isRequired
+  total: PropTypes.number.isRequired
+};
+
+-- PopularDroneSliderItem.jsx --
+PopularDroneSliderItem.propTypes = {
+  sponsored: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  tooltips: PropTypes.string.isRequired,
+  badge: PropTypes.bool.isRequired,
+  completedjob: PropTypes.array.isRequired,
+  rating: PropTypes.number.isRequired,
+};
+
+-- PromotedService.jsx --
+PromotedService.propTypes = {
+  sponsored: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  tooltips: PropTypes.string.isRequired,
+  completedjob: PropTypes.array.isRequired,
+  rating: PropTypes.number.isRequired,
+};
+
+-- BrowseServicesItem.jsx --
+BrowseServicesItem.propTypes = {
+  photo: PropTypes.string.isRequired,
+  icon: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+};
+
+-- LastCompletedMissionsItem.jsx --
+BrowseServicesItem.propTypes = {
+  route: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  rating: PropTypes.number.isRequired,
+  provider: PropTypes.string.isRequired,
+  date: PropTypes.string.isRequired,
+  location: PropTypes.string.isRequired,
+};
+
+{% endhighlight %}

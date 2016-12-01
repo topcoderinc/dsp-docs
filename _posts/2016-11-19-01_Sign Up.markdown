@@ -27,3 +27,9 @@ App
 
 * [SignUpFacebook](https://github.com/kennetpostigo/react-facebook-login-component)
 * [SignUpGoogle](https://github.com/kennetpostigo/react-google-login-component)
+
+### PropTypes
+
+{% highlight ruby %}
+N/A
+{% endhighlight %}

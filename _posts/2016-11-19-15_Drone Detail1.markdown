@@ -28,3 +28,26 @@ App
 ### Recommended Libraries
 
 * [DroneScheduleCalendar](https://github.com/react-component/calendar)
+
+### PropTypes
+
+{% highlight ruby %}
+
+-- DroneSchedule.jsx --
+DroneSchedule.propTypes = {
+  date: PropTypes.string.isRequired,
+  events: PropTypes.array.isRequired,
+};
+
+-- DroneScheduleTable.jsx --
+DroneScheduleTable.propTypes = {
+  launchtime: PropTypes.string.isRequired,
+  serial: PropTypes.string.isRequired,
+  type: PropTypes.string.isRequired,
+  location: PropTypes.string.isRequired,
+  dropoff: PropTypes.string.isRequired,
+  whattodeliver: PropTypes.string.isRequired,
+  weight: PropTypes.string.isRequired,
+};
+
+{% endhighlight %}

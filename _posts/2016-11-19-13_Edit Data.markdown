@@ -17,7 +17,7 @@ App
 │   └───EditTelemetryData
 │       └───TelemetryTabs
 │           └───TelemetryData
-│           │   └───TelemetryData
+│           │   └───TelemetryDataForm
 │           │   └───TelemetryDataActionButtons
 │           └───PictureFromMission
 └───Footer
@@ -27,3 +27,11 @@ App
 
 * [Dropdown](https://github.com/JedWatson/react-select)
 * [Datepicker](https://github.com/Hacker0x01/react-datepicker)
+
+### PropTypes
+
+{% highlight ruby %}
+
+N/A
+
+{% endhighlight %}

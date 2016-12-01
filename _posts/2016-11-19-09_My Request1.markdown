@@ -15,7 +15,6 @@ App
 └───Content
 │   └───Breadcrumb
 │   └───MyRequest
-│   │   └───MyRequestTabs
 └───Footer
 └───ModalOverlay
     └───ModalAcceptRequest
@@ -24,3 +23,11 @@ App
 ### Recommended Libraries
 
 * N/A
+
+### PropTypes
+
+{% highlight ruby %}
+
+N/A
+
+{% endhighlight %}
