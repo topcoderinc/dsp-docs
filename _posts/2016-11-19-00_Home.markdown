@@ -43,10 +43,10 @@ App
 ### PropTypes
 
 {% highlight ruby %}
--- PopularDroneSliderItem.jsx --
+-- PopularDrone.jsx --
 PopularDrone.propTypes = {
-  items: PropTypes.array.isRequired
-  total: PropTypes.number.isRequired
+  items: PropTypes.array.isRequired,
+  total: PropTypes.number.isRequired,
 };
 
 -- PopularDroneSliderItem.jsx --
